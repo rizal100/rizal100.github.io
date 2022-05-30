@@ -1,4 +1,22 @@
+body {
+  height: 3000px;
+}
+
 .jumbotron {
   padding: 2rem;
+
   background-color: #c3daff;
+}
+
+#video {
+  background-color: #c3daff;
+}
+
+#kontak {
+  background-color: black;
+  color: #fff;
+}
+
+#emailHelp {
+  color: #fff;
 }
