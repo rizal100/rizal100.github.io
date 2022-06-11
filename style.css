@@ -9,6 +9,7 @@ body {
 }
 
 #video {
+  position: relative;
   padding: 2rem;
   background-color: #c3daff;
 }
@@ -17,6 +18,9 @@ body {
   text-align: center;
   background-color: black;
   color: #fff;
+}
+
+#about {
 }
 
 #emailHelp {
@@ -28,4 +32,9 @@ body {
 
 .section {
   padding-top: 6rem;
+}
+
+#bagianluar {
+  background-color: ;
+  padding: 2rem;
 }
