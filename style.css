@@ -204,6 +204,37 @@ body {
 }
 
 .anjay-box:hover .matasatu-img {
-  transform: translate3d(-50%, -52%, 80px) scale(2);
+  transform: translate3d(-50%, -52%, 80px) scale(1.5);
+  transition: 1s;
+}
+
+/* biru */
+
+.biru-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -52%, 80px);
+  max-width: 200px;
+}
+
+.anjay-box:hover .biru-img {
+  transform: translate3d(-50%, -52%, 80px) scale(1.6);
+  transition: 1s;
+}
+
+/* tentang */
+
+.tentang-img {
+  position: absolute;
+  top: 46%;
+  transform: translate(-50%, -50%);
+  left: -200px;
+  max-width: 200px;
+}
+
+.tentang-box:hover .tentang-img {
+  left: 50%;
+  transform: translate(-50%, -50%);
   transition: 1s;
 }
