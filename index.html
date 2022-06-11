@@ -15,9 +15,9 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav id="navbar" class="navbar navbar-dark shadow " style="background-color: rgb(37, 36, 36)">
+    <nav id="navbar" class="navbar navbar-dark shadow fixed-top" style="background-color: rgb(37, 36, 36)">
       <div class="justify-content-between container-fluid">
-        <a class="navbar-brand" href="index.html"> <img src="img/986854.png" alt="" width="30" height="24" class="d-inline-block align-text-top" /> Darinime</a>
+        <a class="navbar-brand" href="index.html"> <img src="img/986854.png" alt="" width="30" height="24" class="d-inline-block align-text-top" id="nama-logo" /> Darinime</a>
         </form>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -168,6 +168,39 @@
     </section>
     <!-- akhir video -->
 
+    <!-- animasi -->
+    <section class="my-work">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>my work</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="anjay-box">
+              <h4 class="anjay-name">anjay</h4>
+              <img src="img/matasatu.jpg" alt="logo" class="matasatu-img">
+              <a href="" class="btn btn-dark anjay-detail-tombol">tombol</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="anjay-box">
+              <h4 class="anjay-name">anjay</h4>
+              <a href="" class="btn btn-dark anjay-detail-tombol">tombol</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="tentang-box">
+              <h4 class="tentang-name">anjay</h4>
+              <a href="" class="btn btn-dark tentang-detail-tombol">tombol</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhiran animasi -->
+
     <!-- kontak -->
     <section id="kontak">
       <div class="container">
@@ -244,5 +277,14 @@
           .catch(error => console.error('Error!', error.message));
       });
     </script>
+
+<script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelectorAll(".anjay-box"), {
+		max: 25,
+		speed: 400
+	});
+	
+</script>
   </body>
 </html>

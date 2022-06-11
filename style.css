@@ -35,6 +35,174 @@ body {
 }
 
 #bagianluar {
-  background-color: ;
   padding: 2rem;
+}
+
+/* box-1 */
+
+.anjay-box {
+  position: relative;
+  background-color: aqua;
+  border-radius: 10px;
+  height: 400px;
+  transform-style: preserve-3d;
+}
+
+.anjay-box::before {
+  content: 'my';
+  position: absolute;
+  color: black;
+  font-size: 6em;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.anjay-box:hover::before {
+  opacity: 0.2;
+}
+
+.anjay-box::after {
+  content: 'anjay';
+  position: absolute;
+  color: black;
+  font-size: 4em;
+  font-weight: bold;
+  font-style: italic;
+  top: 225px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.anjay-box:hover::after {
+  opacity: 0.2;
+}
+
+.anjay-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transform: translate3d(0, 0, 50px);
+  transition: 0.3s;
+}
+
+.anjay-box:hover .anjay-name {
+  top: 20px;
+  opacity: 1;
+}
+
+.anjay-detail-tombol {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.anjay-box:hover .anjay-detail-tombol {
+  opacity: 1;
+  bottom: 20px;
+}
+
+/* box-2 */
+
+.tentang-box {
+  position: relative;
+  background-color: aqua;
+  border-radius: 10px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.tentang-box::before {
+  content: 'my';
+  position: absolute;
+  color: black;
+  font-size: 6em;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: -100px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.tentang-box:hover::before {
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0.2;
+}
+
+.tentang-box::after {
+  content: 'anjay';
+  position: absolute;
+  color: black;
+  font-size: 4em;
+  font-weight: bold;
+  font-style: italic;
+  top: 225px;
+  left: 512px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.tentang-box:hover::after {
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0.2;
+}
+
+.tentang-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.tentang-box:hover .tentang-name {
+  top: 20px;
+  opacity: 1;
+}
+
+.tentang-detail-tombol {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.tentang-box:hover .tentang-detail-tombol {
+  opacity: 1;
+  bottom: 20px;
+}
+/* akhir box */
+
+.matasatu-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -52%, 80px);
+  max-width: 200px;
+}
+
+.anjay-box:hover .matasatu-img {
+  transform: translate3d(-50%, -52%, 80px) scale(2);
+  transition: 1s;
 }
