@@ -3,12 +3,13 @@ body {
 }
 
 .jumbotron {
-  padding: 2rem;
+  padding: 6rem;
 
   background-color: #c3daff;
 }
 
 #video {
+  padding: 2rem;
   background-color: #c3daff;
 }
 
@@ -23,4 +24,8 @@ body {
 }
 
 #navbar {
+}
+
+.section {
+  padding-top: 6rem;
 }
