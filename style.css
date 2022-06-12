@@ -193,7 +193,54 @@ body {
   bottom: 20px;
 }
 
-/* img */
+/* anime-box */
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.anime-judul {
+  position: absolute;
+  font-weight: bold;
+  font-style: italic;
+  position: absolute;
+  color: #fff;
+  bottom: 0;
+  opacity: 0;
+  transition: 1s;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.card:hover .anime-judul {
+  bottom: 1em;
+  opacity: 1;
+}
+
+.anime-hari-upload {
+  position: absolute;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  color: #fff;
+  top: 2rem;
+  left: 0;
+  opacity: 0;
+  transition: 1s;
+}
+
+.card:hover .anime-hari-upload {
+  left: 2rem;
+  opacity: 1;
+}
+
+/* anime-img */
+
+.card-img {
+  border-radius: 10px;
+}
+
+/* matasatu-img */
 
 .matasatu-img {
   position: absolute;
@@ -208,7 +255,7 @@ body {
   transition: 1s;
 }
 
-/* biru */
+/* biru-img */
 
 .biru-img {
   position: absolute;
@@ -223,7 +270,7 @@ body {
   transition: 1s;
 }
 
-/* tentang */
+/* tentang-img */
 
 .tentang-img {
   position: absolute;
