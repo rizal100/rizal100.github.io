@@ -227,17 +227,9 @@
       const alert1 = document.querySelector('alert-1');
 
       form.addEventListener('submit', e => {
-        e.preventDefault();
-        // ketika tombol di klik
-        // tampilkan tombol loading, hilangkan tombol kirim
-       
         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
           .then(response =>{
-             // tampilkan tombolkirim, hilangkan tombol loading
-             
-             // tampilkan alert
              alert1.classList.toggle('d-none');
-             // hilangkan form
              form.reset();
              console.log('Success!', response)
             })
