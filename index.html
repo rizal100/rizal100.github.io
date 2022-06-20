@@ -226,6 +226,13 @@
       const alert1 = document.querySelector('alert-1');
 
       form.addEventListener('submit', e => {
+	      
+	app.use((req, res, next)=>{
+	  res.setHeader('Access-Control-Allow-Origin', '*');
+	  res.setHeader('Access-Control-Allow-Origin', 'GET, POST, PUT, PATCH, DELETE, OPTIONS');
+		res.setHeader('Access-Control-Allow-Origin','Content-type, Authoriation');
+		next();
+		})
         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
           .then(response =>{
              alert1.classList.toggle('d-none');
