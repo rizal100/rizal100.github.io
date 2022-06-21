@@ -229,7 +229,11 @@
 
 
       form.addEventListener('submit', e => {
-        response.addHeader("Access-Control-Allow-Origin", "*");
+        router.post('/api/users/add',function(req,res,next){
+  res.header("Access-Control-Allow-Origin","*");
+  res.header("Access-Control-Allow-Credentials",true);
+  UsersModel.signup(req,res);
+});
         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
           .then(response =>{
              alert1.classList.toggle('d-none');
